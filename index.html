@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <main>
+        <section>
+            <div class="container">
+                <form class="site-search d-flex mt-5 mb-5 w-50 mx-auto" role="search">
+                    <input class="site-search-input form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                <ul class="site-list justify-content-center-lg">
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <template id="site-template">
+        
+        <li class="site-item">
+            <img class="site-img" src="" alt="">
+            <div class="site-inner">
+                <h3 class="site-title"></h3>
+                
+                <ul class="site_in-list">
+                    <li class="site_in-item one"></li>
+                    <li class="site_in-item two"></li>
+                    <li class="site_in-item three"></li>
+                </ul>
+                
+                <p class="site-info"></p>
+                
+                <button class="btn btn-primary site-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">More Info</button>
+            </div>
+        </li>
+</template>
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+
+                <ul class="modal-rank">
+                    <li class="modal-rank-item modal-one">
+                        7.1
+                    </li>
+                    <li class="modal-rank-item modal-two">2011</li>
+                    <li class="modal-rank-item modal-three">1hr</li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <iframe class="modal-if" width="460" height="315" src="https://www.youtube-nocookie.com/embed/erLk59H86ww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <div class="modal-box">
+                    <span class="modal-box-title"></span>
+
+                    <p class="modal-box-text">
+
+                    </p>
+
+                    <a href="" class="modal-box-link" target="blank">show on IMdb</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-closed" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./movies.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

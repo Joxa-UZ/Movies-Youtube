@@ -1,0 +1,233 @@
+body{
+    background-color: #000;
+}
+.site-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    border-radius: 10px;
+}
+.site-item{
+    width: 350px;
+    /* height: 450px; */
+    height: auto;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.site-item:hover{
+    box-shadow: #fff 0px 4px 10px, #fff 0px 4px 25px;
+}
+.site-img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.site_in-list{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+}
+.site_in-item{
+    display: flex;
+    align-items: center;
+}
+.site-inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    margin: auto;
+    height: 234px;
+}
+.site_in-item::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.one::before{
+    content: "";
+    margin-right: 5px;
+    background-image: url("./images/stars.png");
+    background-size: contain;
+}
+.two::before{
+    content: "";
+    margin-right: 5px;
+    background-image: url("./images/calendar.png");
+    background-size: contain;
+}
+.three::before{
+    content: "";
+    margin-right: 5px;
+    background-image: url("./images/hour.png");
+    background-size: contain;
+}
+
+.site-btn{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    border: 1px solid transparent;
+}
+.site-btn::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    background-image: url("./images/iiii.png");
+    background-size: cover;
+}
+.btn:hover{
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #000;
+    transition: 0.5s;
+}
+
+.modal-rank{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.modal-rank-item{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.modal-rank-item::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.modal-one:before{
+    background-image: url("./images/stars.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.modal-two:before{
+    background-image: url("./images/calendar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.modal-three:before{
+    background-image: url("./images/hour.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.modal-dialog{
+    display: flex;
+    justify-content: center;
+}
+.site-title{
+    font-size: 20px;
+}
+.modal-if{
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.modal-content{
+    width: 800px;
+}
+.modal-body{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-header{
+    width: 800px;
+}
+
+@media only screen  and (max-width: 992px) {
+    .modal-header{
+        width: 600px;
+    }
+    .site-list{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-header{
+        width: 100%;
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: column;
+    }
+    .modal-rank{
+        margin-top: 20px;
+    }
+    .modal-body{
+        flex-direction: column;
+    }
+    .modal-if{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .modal-box-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0px;
+    }
+    .modal-box-text{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .modal-header{
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .modal-body{
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .modal-if{
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .modal-footer{
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .modal-if{
+        max-width: 250px;
+        height: 250px;
+    }
+}
